@@ -1,0 +1,33 @@
+﻿Why Choose Yummy  
+Discover a smarter way to dine. Yummy brings together convenience, variety, and trust in one simple platform. With just a few clicks, you can explore top-rated restaurants, secure instant reservations, 
+and enjoy exclusive offers tailored to your taste. Our intuitive design makes planning effortless, while verified reviews ensure confidence in every choice. Whether it’s a casual lunch or a special celebration, 
+Yummy helps you find the perfect table, every time.
+
+
+
+1.  
+Title: Delightful dining made simple
+Text: Quick reservations connect you with restaurants that match your taste, turning every meal into a smooth and enjoyable experience.
+
+2.  
+Title: Trusted choices for every occasion
+Text: Verified reviews and curated listings help you book confidently, ensuring each dining moment meets your expectations.
+
+3.  
+Title: Exclusive offers at your fingertips
+Text: Special deals and seasonal menus are always available, giving you more reasons to enjoy dining out.
+
+4.  
+Title: Personalized recommendations you’ll love
+Text: Smart suggestions guide you to places that fit your mood, whether casual dining or a special celebration.
+
+5.  
+Title: Seamless booking, memorable moments
+Text: With just a few taps, Yummy makes planning effortless, so you can focus on enjoying the food and company.
+
+6.  
+Title: Flavor, convenience, and trust combined
+Text: Yummy brings together quality restaurants, easy reservations, and reliable service—all in one platform.
+
+
+/yummy-red-1.0.0/assets/img/events-1.jpg
