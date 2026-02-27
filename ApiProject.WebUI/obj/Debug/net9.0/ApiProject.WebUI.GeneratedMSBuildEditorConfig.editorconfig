@@ -28,8 +28,60 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/About/AboutList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcQWJvdXRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/About/CreateAbout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcQ3JlYXRlQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/About/UpdateAbout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcVXBkYXRlQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/AdminLayout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Category/CategoryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Category/CreateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Category/UpdateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Chef/ChefList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxDaGVmTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Chef/CreateChef.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxDcmVhdGVDaGVmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Chef/UpdateChef.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxVcGRhdGVDaGVmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Feature/CreateFeature.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVhdHVyZVxDcmVhdGVGZWF0dXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Feature/FeatureList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVhdHVyZVxGZWF0dXJlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Feature/UpdateFeature.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVhdHVyZVxVcGRhdGVGZWF0dXJlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Home/Index.cshtml]
@@ -38,6 +90,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Product/CreateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGVQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Product/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Product/UpdateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGVQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Reservation/CreateReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cQ3JlYXRlUmVzZXJ2YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Reservation/ReservationList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cUmVzZXJ2YXRpb25MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Reservation/UpdateReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cVXBkYXRlUmVzZXJ2YXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_AboutDefaultComponentPartial/Default.cshtml]
@@ -72,16 +148,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Zvb3RlckRlZmF1bHRDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_HeadAdminLayoutComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0hlYWRBZG1pbkxheW91dENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_HeadDefaultComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0hlYWREZWZhdWx0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_NavbarAccountMenuAdminLayoutComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX05hdmJhckFjY291bnRNZW51QWRtaW5MYXlvdXRDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_NavbarAdminLayoutComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX05hdmJhckFkbWluTGF5b3V0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_NavbarDefaultComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX05hdmJhckRlZmF1bHRDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_NavbarFormInlineAdminLayoutComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX05hdmJhckZvcm1JbmxpbmVBZG1pbkxheW91dENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_NavbarMessageListAdminLayoutComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX05hdmJhck1lc3NhZ2VMaXN0QWRtaW5MYXlvdXRDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_NavbarNotificationAdminLayoutComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX05hdmJhck5vdGlmaWNhdGlvbkFkbWluTGF5b3V0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_RightSettingsAdminLayoutComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1JpZ2h0U2V0dGluZ3NBZG1pbkxheW91dENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_ServiceDefaultComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NlcnZpY2VEZWZhdWx0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_SidebarAdminLayoutComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NpZGViYXJBZG1pbkxheW91dENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/Components/_TestimonialDefaultComponentPartial/Default.cshtml]
@@ -94,6 +202,42 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Testimonial/CreateTestimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdGltb25pYWxcQ3JlYXRlVGVzdGltb25pYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Testimonial/TestimonialList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdGltb25pYWxcVGVzdGltb25pYWxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/Testimonial/UpdateTestimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdGltb25pYWxcVXBkYXRlVGVzdGltb25pYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/WhyChooseYummy/CreateWhyChooseYummy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2h5Q2hvb3NlWXVtbXlcQ3JlYXRlV2h5Q2hvb3NlWXVtbXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/WhyChooseYummy/UpdateWhyChooseYummy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2h5Q2hvb3NlWXVtbXlcVXBkYXRlV2h5Q2hvb3NlWXVtbXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/WhyChooseYummy/WhyChooseYummyList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2h5Q2hvb3NlWXVtbXlcV2h5Q2hvb3NlWXVtbXlMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/YummyEvent/CreateYummyEvent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWXVtbXlFdmVudFxDcmVhdGVZdW1teUV2ZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/YummyEvent/UpdateYummyEvent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWXVtbXlFdmVudFxVcGRhdGVZdW1teUV2ZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/YummyEvent/YummyEventList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWXVtbXlFdmVudFxZdW1teUV2ZW50TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/burakhaslak/source/repos/ApiProjectTasks/ApiProject.WebUI/Views/_ViewImports.cshtml]

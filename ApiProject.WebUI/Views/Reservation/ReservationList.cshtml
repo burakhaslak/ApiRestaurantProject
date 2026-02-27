@@ -1,0 +1,59 @@
+﻿@model List<ResultReservationDto>
+@{
+	ViewData["Title"] = "ReservationList";
+	Layout = "~/Views/AdminLayout/Index.cshtml";
+	int count = 0;
+}
+
+<section class="section">
+	<div class="section-body">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-12">
+				<div class="card">
+					<div class="card-header">
+						<h4>Reservation's List</h4>
+					</div>
+					<div class="card-body">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Name and Surname</th>
+									<th scope="col">Reservation Date</th>
+									<th scope="col">Reservation Time</th>
+									<th scope="col">No. of People</th>
+									<th scope="col">Reservation Status</th>
+									<th scope="col">Delete</th>
+									<th scope="col">Update</th>
+									<th scope="col">Confirm</th>
+									<th scope="col">Cancel</th>
+									<th scope="col">List as Pending</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									count++;
+									<tr>
+										<th scope="row">@count</th>
+										<td>@item.NameSurname</td>
+										<td>@item.ReservationDate</td>
+										<td>@item.ReservationTime</td>
+										<td>@item.GuestCount</td>
+										<td>@item.ReservationStatus</td>
+										<td><a href="/Reservation/DeleteReservation/@item.ReservationId/" class="btn btn-outline-danger">Delete</a> </td>
+										<td><a href="/Reservation/UpdateReservation/@item.ReservationId/" class="btn btn-outline-info">Update</a> </td>
+										<td><a href="/Reservation/AcceptReservation/@item.ReservationId/" class="btn btn-outline-success">Confirm</a> </td>
+										<td><a href="/Reservation/CancelReservation/@item.ReservationId/" class="btn btn-outline-dark">Cancel</a> </td>
+										<td><a href="/Reservation/PendReservation/@item.ReservationId/" class="btn btn-outline-warning">Pending</a> </td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+

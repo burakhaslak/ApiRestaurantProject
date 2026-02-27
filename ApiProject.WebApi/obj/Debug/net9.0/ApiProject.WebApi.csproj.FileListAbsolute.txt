@@ -168,3 +168,4 @@ C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebApi\obj\Debug\ne
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebApi\bin\Debug\net9.0\AutoMapper.dll
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebApi\bin\Debug\net9.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebApi\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebApi\obj\Debug\net9.0\ApiProject.WebApi.sourcelink.json
