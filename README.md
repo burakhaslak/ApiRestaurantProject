@@ -1,6 +1,6 @@
 # 🍽️ ApiYummy - Intelligent Restaurant Management System
 
-ApiYummy is a modern, full-stack restaurant management and reservation system built with ASP.NET Core 8.0. The project stands out by integrating advanced AI capabilities (Natural Language Processing and Large Language Models) with real-time communication tools.
+ApiYummy is a modern, full-stack restaurant management and reservation system built with ASP.NET Core 9.0. The project stands out by integrating advanced AI capabilities (Natural Language Processing and Large Language Models) with real-time communication tools.
 
 ---
 
@@ -44,7 +44,7 @@ The core innovation of ApiYummy lies in its AI-driven features:
 
 | Layer | Technology |
 |---|---|
-| **Framework** | ASP.NET Core 8.0 (Web API & MVC) |
+| **Framework** | ASP.NET Core 9.0 (Web API & MVC) |
 | **Real-Time** | SignalR |
 | **AI Ecosystem** | Groq Cloud API, Hugging Face NLP Models |
 | **ORM** | Entity Framework Core (SQL Server) |
