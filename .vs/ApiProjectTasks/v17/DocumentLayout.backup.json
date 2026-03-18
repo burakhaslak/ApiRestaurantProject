@@ -3,20 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\views\\reservation\\updatereservation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\views\\reservation\\updatereservation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\views\\reservation\\reservationlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\views\\reservation\\reservationlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\views\\chat\\sendchatwithai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\views\\chat\\sendchatwithai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\models\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\models\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\views\\message\\messagelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\views\\message\\messagelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\views\\shared\\components\\_sidebaradminlayoutcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\views\\shared\\components\\_sidebaradminlayoutcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\dtos\\messagedtos\\resultmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\dtos\\messagedtos\\resultmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\dtos\\messagedtos\\resultmessagebyisreadfalsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\dtos\\messagedtos\\resultmessagebyisreadfalsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|c:\\users\\burakhaslak\\source\\repos\\apiprojecttasks\\apiproject.webui\\viewcomponents\\dashboardviewcomponents\\_dashboardaidailymenusuggestioncomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B697B6CE-6071-4341-9FF6-C06ABCF53F64}|ApiProject.WebUI\\ApiProject.WebUI.csproj|solutionrelative:apiproject.webui\\viewcomponents\\dashboardviewcomponents\\_dashboardaidailymenusuggestioncomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,55 +66,142 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdateReservation.cshtml",
-              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Reservation\\UpdateReservation.cshtml",
-              "RelativeDocumentMoniker": "ApiProject.WebUI\\Views\\Reservation\\UpdateReservation.cshtml",
-              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Reservation\\UpdateReservation.cshtml",
-              "RelativeToolTip": "ApiProject.WebUI\\Views\\Reservation\\UpdateReservation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-27T19:41:15.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ReservationController.cs",
-              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Controllers\\ReservationController.cs",
-              "RelativeDocumentMoniker": "ApiProject.WebUI\\Controllers\\ReservationController.cs",
-              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Controllers\\ReservationController.cs",
-              "RelativeToolTip": "ApiProject.WebUI\\Controllers\\ReservationController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwEMAAAAvAAAAAAAAAA==",
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Models\\ChatHub.cs",
+              "RelativeDocumentMoniker": "ApiProject.WebUI\\Models\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Models\\ChatHub.cs",
+              "RelativeToolTip": "ApiProject.WebUI\\Models\\ChatHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T18:37:25.289Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReservationList.cshtml",
-              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Reservation\\ReservationList.cshtml",
-              "RelativeDocumentMoniker": "ApiProject.WebUI\\Views\\Reservation\\ReservationList.cshtml",
-              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Reservation\\ReservationList.cshtml",
-              "RelativeToolTip": "ApiProject.WebUI\\Views\\Reservation\\ReservationList.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-27T18:38:23.165Z",
+              "WhenOpened": "2026-03-18T13:00:30.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "ApiProject.WebUI\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "ApiProject.WebUI\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T12:59:13.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SendChatWithAI.cshtml",
+              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Chat\\SendChatWithAI.cshtml",
+              "RelativeDocumentMoniker": "ApiProject.WebUI\\Views\\Chat\\SendChatWithAI.cshtml",
+              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Chat\\SendChatWithAI.cshtml",
+              "RelativeToolTip": "ApiProject.WebUI\\Views\\Chat\\SendChatWithAI.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T12:58:56.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "ApiProject.WebUI\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "ApiProject.WebUI\\Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T12:55:07.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MessageList.cshtml",
+              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Message\\MessageList.cshtml",
+              "RelativeDocumentMoniker": "ApiProject.WebUI\\Views\\Message\\MessageList.cshtml",
+              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Message\\MessageList.cshtml",
+              "RelativeToolTip": "ApiProject.WebUI\\Views\\Message\\MessageList.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAADwv28AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T11:25:59.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResultMessageByIsReadFalseDto.cs",
+              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Dtos\\MessageDtos\\ResultMessageByIsReadFalseDto.cs",
+              "RelativeDocumentMoniker": "ApiProject.WebUI\\Dtos\\MessageDtos\\ResultMessageByIsReadFalseDto.cs",
+              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Dtos\\MessageDtos\\ResultMessageByIsReadFalseDto.cs",
+              "RelativeToolTip": "ApiProject.WebUI\\Dtos\\MessageDtos\\ResultMessageByIsReadFalseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T11:25:44.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_DashboardAIDailyMenuSuggestionComponentPartial.cs",
+              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\ViewComponents\\DashboardViewComponents\\_DashboardAIDailyMenuSuggestionComponentPartial.cs",
+              "RelativeDocumentMoniker": "ApiProject.WebUI\\ViewComponents\\DashboardViewComponents\\_DashboardAIDailyMenuSuggestionComponentPartial.cs",
+              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\ViewComponents\\DashboardViewComponents\\_DashboardAIDailyMenuSuggestionComponentPartial.cs",
+              "RelativeToolTip": "ApiProject.WebUI\\ViewComponents\\DashboardViewComponents\\_DashboardAIDailyMenuSuggestionComponentPartial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T10:22:34.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiProject.WebUI\\appsettings.json",
+              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\appsettings.json",
+              "RelativeToolTip": "ApiProject.WebUI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-18T10:21:58.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "ApiProject.WebUI\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "ApiProject.WebUI\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-16T12:46:28.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResultMessageDto.cs",
+              "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Dtos\\MessageDtos\\ResultMessageDto.cs",
+              "RelativeDocumentMoniker": "ApiProject.WebUI\\Dtos\\MessageDtos\\ResultMessageDto.cs",
+              "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Dtos\\MessageDtos\\ResultMessageDto.cs",
+              "RelativeToolTip": "ApiProject.WebUI\\Dtos\\MessageDtos\\ResultMessageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T11:25:46.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Shared\\Components\\_SidebarAdminLayoutComponentPartial\\Default.cshtml",
               "RelativeDocumentMoniker": "ApiProject.WebUI\\Views\\Shared\\Components\\_SidebarAdminLayoutComponentPartial\\Default.cshtml",
               "ToolTip": "C:\\Users\\burakhaslak\\source\\repos\\ApiProjectTasks\\ApiProject.WebUI\\Views\\Shared\\Components\\_SidebarAdminLayoutComponentPartial\\Default.cshtml",
               "RelativeToolTip": "ApiProject.WebUI\\Views\\Shared\\Components\\_SidebarAdminLayoutComponentPartial\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAB6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-27T14:16:27.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-18T11:34:14.719Z"
             }
           ]
         }

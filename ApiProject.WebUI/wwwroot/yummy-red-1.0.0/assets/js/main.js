@@ -105,9 +105,14 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+    const glightbox = GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: false,
+        autoplayVideos: false,
+        onOpen: () => { },
+        plyr: {}
+    });
 
   /**
    * Initiate Pure Counter

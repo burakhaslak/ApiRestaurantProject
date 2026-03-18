@@ -308,7 +308,6 @@ C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\gu0d8955w7-mlv21k5csn.gz
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\p79v8vutn6-yac5qyud66.gz
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\irdlh7gw1h-f8xmg2ov1h.gz
-C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\2mm8yutu1d-n9eivmb0h7.gz
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\p274n84pkv-2sbfgwt7cd.gz
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\4qchjzub5d-jfm3rcjzyc.gz
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\frh2zskqs8-akmhyfivmy.gz
@@ -1127,3 +1126,4 @@ C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\tjo6fo3je0-aq0stngacl.gz
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\uc0qakyudy-j1d7kd8cfa.gz
 C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\hf6aiqnoqv-0592m3gnpe.gz
+C:\Users\burakhaslak\source\repos\ApiProjectTasks\ApiProject.WebUI\obj\Debug\net9.0\compressed\2mm8yutu1d-05ht71pfmc.gz

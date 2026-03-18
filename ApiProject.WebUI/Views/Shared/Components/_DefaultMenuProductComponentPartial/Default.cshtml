@@ -1,36 +1,130 @@
 ﻿@model List<ApiProject.WebUI.Dtos.ProductDtos.ResultProductDto>
 
+<style>
+    .menu-item {
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 0 15px;
+    }
+
+        .menu-item .menu-img {
+            width: 100%;
+            /* aspect-ratio: 16 / 9; Geniş bir dikdörtgen için bu modern yöntemi kullanabilirsin */
+            height: 200px; /* Sabit bir yükseklik belirleyelim */
+            object-fit: cover; /* Resmi kesmeden/bozmadan dikdörtgen alana yayar */
+            border-radius: 4px;
+            margin-bottom: 20px;
+            transition: 0.3s all ease-in-out;
+            display: block;
+        }
+
+        /* Hover efekti (Opsiyonel) */
+        .menu-item:hover .menu-img {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .menu-item h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #37373f;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .menu-item .ingredients {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: #8d8d96;
+            margin-bottom: 8px;
+            min-height: 40px; /* Hizalamayı korumak için */
+        }
+
+        .menu-item .price {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ce1212;
+            margin-top: 5px;
+        }
+
+    .glightbox-container .ginner-container {
+        max-width: 800px !important;
+    }
+
+    .glightbox-container .gslide-image {
+        max-width: 900px !important;
+    }
+
+        .glightbox-container .gslide-image img {
+            max-width: 100% !important;
+            max-height: 80vh !important;
+            width: auto !important;
+            height: auto !important;
+            object-fit: contain !important;
+        }
+
+    .glightbox-container .gslide-media {
+        max-width: 90vw !important;
+        max-height: 80vh !important;
+    }
+
+    .glightbox-container .gslide-image img {
+        max-width: 800px !important;
+        max-height: 70vh !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+</style>
+
+
 <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
 
+    <!-- Tüm Menü -->
+    <div class="tab-pane fade active show" id="menu-all">
+        <div class="tab-header text-center">
+            <p>Menü</p>
+            <h3>Tüm Lezzetler</h3>
+        </div>
 
-	<div class="tab-pane fade active show" id="menu-starters">
+        <div class="row gy-5">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 menu-item">
+                    <a href="@item.ImageUrl" class="glightbox" data-type="image">
+                        <img src="@item.ImageUrl" class="menu-img img-fluid" alt="" style="height:250px; width:500px;">
+                    </a>
+                    <h4>@item.ProductName</h4>
+                    <p class="ingredients">@item.ProductDescription</p>
+                    <p class="price">@item.Price ₺</p>
+                </div>
+            }
+        </div>
+    </div>
 
-		<div class="tab-header text-center">
-			<p>Menu</p>
-			<h3>All</h3>
-		</div>
+    <!-- Kategori Bazlı Menü -->
+    @foreach (var categoryId in Model.Select(x => x.CategoryId).Distinct())
+    {
+        <div class="tab-pane fade" id="menu-@categoryId">
+            <div class="tab-header text-center">
+                <p>Menü</p>
+                <h3>@Model.First(x => x.CategoryId == categoryId).CategoryName</h3>
+            </div>
 
-		<div class="row gy-5">
-			@foreach (var item in Model)
-			{
-				<div class="col-lg-4 menu-item">
-					<a href="@item.ImageUrl" class="glightbox"><img src="@item.ImageUrl" class="menu-img img-fluid" alt=""></a>
-					<h4>@item.ProductName</h4>
-					<p class="ingredients">
-						@item.ProductDescription
-					</p>
-					<p class="price">
-						€ @item.Price
-					</p>
-				</div>
-			}
-
-
-
-
-		</div>
-	</div><!-- End Starter Menu Content -->
-
-
-
+            <div class="row gy-5">
+                @foreach (var item in Model.Where(x => x.CategoryId == categoryId))
+                {
+                    <div class="col-lg-4 menu-item">
+                        <a href="@item.ImageUrl" class="glightbox">
+                            <img src="@item.ImageUrl" class="menu-img img-fluid" alt="" style="height:250px; width:500px;">
+                        </a>
+                        <h4>@item.ProductName</h4>
+                        <p class="ingredients">@item.ProductDescription</p>
+                        <p class="price">@item.Price ₺</p>
+                    </div>
+                }
+            </div>
+        </div>
+    }
 </div>

@@ -1,0 +1,370 @@
+﻿@model List<ResultGroupReservationDto>
+<div class="card shadow-sm border-0 rounded-4">
+    <div class="card-header d-flex justify-content-between align-items-center bg-white py-3">
+        <h4 class="fw-bold mb-0">Group Reservations</h4>
+        <div class="position-relative">
+            <input type="text" class="form-control rounded-pill ps-4" placeholder="Search reservation...">
+            <i class="fas fa-search position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
+        </div>
+    </div>
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table align-middle table-hover mb-0">
+                <thead class="bg-light">
+                    <tr>
+                        <th></th>
+                        <th>Group Title</th>
+                        <th>Responsible Person</th>
+                        <th>Status</th>
+                        <th>Participants</th>
+                        <th>Last Process</th>
+                        <th>Reservation</th>
+                        <th>Priority</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        string statusClass = item.ReservationStatus switch
+                        {
+                            "Approved" => "badge-success",
+                            "Pending" => "badge-warning",
+                            "Cancelled" => "badge-danger",
+                            _ => "badge-secondary"
+                        };
+
+                        string statusIcon = item.ReservationStatus switch
+                        {
+                            "Approved" => "fas fa-check-circle",
+                            "Pending" => "fas fa-hourglass-half",
+                            "Cancelled" => "fas fa-times-circle",
+                            _ => "fas fa-info-circle"
+                        };
+
+                        string priorityIcon = item.Priority switch
+                        {
+                            "High" => "fas fa-exclamation-circle text-danger",
+                            "Medium" => "fas fa-chevron-up text-warning",
+                            "Low" => "fas fa-minus-circle text-success",
+                            _ => "fas fa-circle"
+                        };
+
+                        <tr class="table-row-modern">
+                            <td style="width: 35px;">
+                                <input type="checkbox" />
+                            </td>
+                            <td class="fw-semibold">
+                                <i class="fas fa-users text-primary me-2"></i>
+                                @item.GroupTitle
+                            </td>
+                            <td>
+                                <i class="fas fa-user text-secondary me-2"></i>
+                                @item.ContactPersonName
+                            </td>
+                            <td>
+                                <span class="badge @statusClass px-3 py-2 rounded-pill">
+                                    <i class="@statusIcon me-1"></i>
+                                    @item.ReservationStatus
+                                </span>
+                            </td>
+                            <td>
+                                <i class="fas fa-user-friends text-info me-2"></i>
+                                @item.ParticipantCount
+                            </td>
+                            <td>
+                                <i class="fas fa-calendar-alt text-warning me-2"></i>
+                                @item.DueDate.ToString("dd-MMM-yyyy")
+                            </td>
+                            <td>
+                                <i class="fas fa-calendar-check text-success me-2"></i>
+                                @item.ReservationDate.ToString("dd-MMM-yyyy")
+                            </td>
+                            <td>
+                                <span class="badge bg-light text-dark px-3 py-2 rounded-pill">
+                                    <i class="@priorityIcon me-1"></i>
+                                    @item.Priority
+                                </span>
+                            </td>
+                            <td>
+                                <button type="button"
+                                        class="btn btn-outline-primary btn-sm rounded-pill px-3 detail-btn"
+                                        data-id="@item.GroupReservationId"
+                                        data-title="@item.GroupTitle"
+                                        data-responsible="@item.ContactPersonName"
+                                        data-email="@item.Email"
+                                        data-status="@item.ReservationStatus"
+                                        data-person-count="@item.ParticipantCount"
+                                        data-reservation-date="@item.ReservationDate.ToString("dd MMM yyyy")"
+                                        data-last-process="@item.DueDate.ToString("dd MMM yyyy")"
+                                        data-priority="@item.Priority"
+                                        data-details="@item.Details"
+                                        data-status-class="@statusClass"
+                                        data-status-icon="@statusIcon"
+                                        data-priority-icon="@priorityIcon">
+                                    <i class="fas fa-info-circle me-1"></i> Details
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="reservationDetailModal" tabindex="-1" aria-labelledby="reservationDetailModalLabel" aria-hidden="true" data-bs-backdrop="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg rounded-4" style="background: white;">
+            <div class="modal-header border-0 bg-gradient-primary text-white rounded-top-4 py-4 position-relative">
+                <div>
+                    <h5 class="modal-title fw-bold mb-1" id="reservationDetailModalLabel">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <span id="modal-title">Reservation Details</span>
+                    </h5>
+                    <small class="opacity-75">Group reservation info</small>
+                </div>
+                <button type="button" class="btn-close btn-close-white modal-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="detail-card p-3 rounded-3 bg-light h-100">
+                            <h6 class="text-primary fw-bold mb-3"><i class="fas fa-user-circle me-2"></i>Responsible Info</h6>
+                            <div class="detail-item mb-3">
+                                <label class="text-muted small mb-1">Responsible Person</label>
+                                <p class="mb-0 fw-semibold" id="modal-responsible"><i class="fas fa-user text-primary me-2"></i><span></span></p>
+                            </div>
+                            <div class="detail-item">
+                                <label class="text-muted small mb-1">Email</label>
+                                <p class="mb-0" id="modal-email"><i class="fas fa-envelope text-primary me-2"></i><span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="detail-card p-3 rounded-3 bg-light h-100">
+                            <h6 class="text-success fw-bold mb-3"><i class="fas fa-calendar-check me-2"></i>Reservation Info</h6>
+                            <div class="detail-item mb-3">
+                                <label class="text-muted small mb-1">Participants</label>
+                                <p class="mb-0 fw-semibold" id="modal-person-count"><i class="fas fa-user-friends text-success me-2"></i><span></span></p>
+                            </div>
+                            <div class="detail-item">
+                                <label class="text-muted small mb-1">Reservation Date</label>
+                                <p class="mb-0" id="modal-reservation-date"><i class="fas fa-calendar-alt text-success me-2"></i><span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="detail-card p-3 rounded-3 bg-light">
+                                    <label class="text-muted small mb-2">Status</label>
+                                    <div id="modal-status"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="detail-card p-3 rounded-3 bg-light">
+                                    <label class="text-muted small mb-2">Priority</label>
+                                    <div id="modal-priority"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detail-card p-3 rounded-3 bg-light">
+                            <label class="text-muted small mb-1">Last Process Date</label>
+                            <p class="mb-0" id="modal-last-process"><i class="fas fa-clock text-warning me-2"></i><span></span></p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detail-card p-3 rounded-3 bg-light">
+                            <label class="text-muted small mb-2"><i class="fas fa-file-alt me-2"></i>Detailed Description</label>
+                            <p class="mb-0 text-justify" id="modal-details"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer border-0 bg-light rounded-bottom-4">
+                <button type="button" class="btn btn-secondary rounded-pill px-4 modal-action-btn" data-bs-dismiss="modal"><i class="fas fa-times me-2"></i>Close</button>
+                <button type="button" class="btn btn-primary rounded-pill px-4 modal-action-btn"><i class="fas fa-edit me-2"></i>Edit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .table-row-modern:hover {
+        background-color: #f8f9fa !important;
+        transition: 0.2s ease-in-out;
+    }
+
+    .rounded-4 {
+        border-radius: 1rem !important;
+    }
+
+    .bg-gradient-primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .detail-card {
+        transition: all 0.3s ease;
+    }
+
+        .detail-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+    .detail-item label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .modal-content {
+        overflow: hidden;
+        background: white !important;
+    }
+
+    .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .modal {
+        z-index: 1050 !important;
+    }
+
+    .modal-backdrop {
+        z-index: 1040 !important;
+    }
+
+    .modal-close-btn {
+        z-index: 1060 !important;
+        position: relative !important;
+        cursor: pointer !important;
+        pointer-events: auto !important;
+    }
+
+    .modal-action-btn {
+        z-index: 1060 !important;
+        position: relative !important;
+        cursor: pointer !important;
+        pointer-events: auto !important;
+    }
+
+    .btn-close:focus {
+        box-shadow: none !important;
+        opacity: 1 !important;
+    }
+
+    .btn-close:hover {
+        opacity: 0.8 !important;
+    }
+
+    .badge-success {
+        background-color: #28a745 !important;
+        color: white;
+    }
+
+    .badge-warning {
+        background-color: #ffc107 !important;
+        color: #000;
+    }
+
+    .badge-danger {
+        background-color: #dc3545 !important;
+        color: white;
+    }
+
+    .text-justify {
+        text-align: justify;
+        line-height: 1.6;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const detailButtons = document.querySelectorAll('.detail-btn');
+        const modalElement = document.getElementById('reservationDetailModal');
+
+        detailButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                // Get data from button attributes
+                const title = this.getAttribute('data-title');
+                const responsible = this.getAttribute('data-responsible');
+                const email = this.getAttribute('data-email');
+                const status = this.getAttribute('data-status');
+                const personCount = this.getAttribute('data-person-count');
+                const reservationDate = this.getAttribute('data-reservation-date');
+                const lastProcess = this.getAttribute('data-last-process');
+                const priority = this.getAttribute('data-priority');
+                const details = this.getAttribute('data-details');
+                const statusClass = this.getAttribute('data-status-class');
+                const statusIcon = this.getAttribute('data-status-icon');
+                const priorityIcon = this.getAttribute('data-priority-icon');
+
+                // Update modal content
+                document.getElementById('modal-title').textContent = title;
+                document.querySelector('#modal-responsible span').textContent = responsible;
+                document.querySelector('#modal-email span').textContent = email || 'Belirtilmemiş';
+                document.querySelector('#modal-person-count span').textContent = personCount + ' Participant';
+                document.querySelector('#modal-reservation-date span').textContent = reservationDate;
+                document.querySelector('#modal-last-process span').textContent = lastProcess;
+                document.getElementById('modal-details').textContent = details || 'Detay bilgisi bulunmamaktadır.';
+
+                // Update status badge
+                document.getElementById('modal-status').innerHTML = `
+                    <span class="badge ${statusClass} px-3 py-2 rounded-pill fs-6">
+                        <i class="${statusIcon} me-1"></i>
+                        ${status}
+                    </span>
+                `;
+
+                // Update priority badge
+                document.getElementById('modal-priority').innerHTML = `
+                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill fs-6">
+                        <i class="${priorityIcon} me-1"></i>
+                        ${priority}
+                    </span>
+                `;
+
+                // Show modal using Bootstrap 5
+                const modal = new bootstrap.Modal(modalElement, {
+                    backdrop: true,
+                    keyboard: true,
+                    focus: true
+                });
+                modal.show();
+            });
+        });
+
+        // Explicit close button handlers with direct event binding
+        const closeButtons = document.querySelectorAll('[data-bs-dismiss="modal"]');
+        closeButtons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const modal = bootstrap.Modal.getInstance(modalElement);
+                if (modal) {
+                    modal.hide();
+                }
+            });
+        });
+
+        // Backdrop click handler
+        modalElement.addEventListener('click', function(e) {
+            if (e.target === modalElement) {
+                const modal = bootstrap.Modal.getInstance(modalElement);
+                if (modal) {
+                    modal.hide();
+                }
+            }
+        });
+    });
+</script>

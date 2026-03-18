@@ -1,0 +1,260 @@
+﻿@model List<ResultContactDto>
+
+@{
+    ViewData["Title"] = "ContactList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<style>
+    .contact-card {
+        border-radius: 20px;
+        border: none;
+        background: #fff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        overflow: hidden;
+    }
+
+    .contact-info-item {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        border-bottom: 1px solid #f0f4f8;
+        transition: background 0.3s;
+    }
+
+        .contact-info-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-info-item:hover {
+            background: #f8f9ff;
+        }
+
+    .icon-box {
+        width: 50px;
+        height: 50px;
+        background: #e8ecff;
+        color: #667eea;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        margin-right: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .info-content label {
+        display: block;
+        color: #999;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+        font-weight: 700;
+    }
+
+    .info-content span {
+        color: #333;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .modern-btn {
+        padding: 0.8rem 1.5rem;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        transition: all 0.3s;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .btn-edit {
+        background: #667eea;
+        color: white;
+    }
+
+    .btn-delete {
+        background: #f5576c;
+        color: white;
+    }
+
+    .btn-create-full {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 15px rgba(102,126,234,0.25);
+    }
+
+    .modern-btn:hover {
+        transform: translateY(-2px);
+        opacity: 0.9;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Başlık hizalama — iç içe girme düzeltildi */
+    .contact-page-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+        .contact-page-header .section-title {
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .contact-page-header .section-lead {
+            margin: 0;
+            color: #6c757d;
+            font-size: 0.95rem;
+        }
+
+    /* Map iframe tam genişlik */
+    .map-container {
+        width: 100%;
+        height: 260px;
+        overflow: hidden;
+        background: #eee;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 260px;
+        border: none;
+        display: block;
+    }
+
+    /* Map card eşit yükseklik */
+    .map-card-body {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-note {
+        padding: 0.75rem 1rem;
+        text-align: center;
+        border-top: 1px solid #f0f4f8;
+    }
+</style>
+
+<section class="section">
+    <div class="section-body">
+
+        <!-- Başlık -->
+        <div class="contact-page-header">
+            <h2 class="section-title">Contact Information</h2>
+            <br />
+            <p class="section-lead">Manage your restaurant's physical address, phone, and hours.</p>
+        </div>
+
+        @if (Model.Count == 0)
+        {
+            <div class="row">
+                <div class="col-12">
+                    <a href="/Contact/CreateContact/" class="modern-btn btn-create-full">
+                        <i class="fas fa-plus-circle"></i> Setup Contact Information
+                    </a>
+                </div>
+            </div>
+        }
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <!-- Sol: İletişim bilgileri -->
+                <div class="col-lg-7 mb-4">
+                    <div class="card contact-card shadow-sm h-100">
+
+                        <div class="contact-info-item">
+                            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-content">
+                                <label>Address</label>
+                                <span>@item.Address</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="icon-box"><i class="fas fa-phone"></i></div>
+                            <div class="info-content">
+                                <label>Phone Number</label>
+                                <span>@item.PhoneNumber</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div class="info-content">
+                                <label>Email Address</label>
+                                <span>@item.Email</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="icon-box"><i class="fas fa-clock"></i></div>
+                            <div class="info-content">
+                                <label>Available Hours</label>
+                                <!-- Html.Raw ile <strong> tag'leri düzgün render edilir -->
+                                <span>@Html.Raw(item.OpenHours)</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer bg-light d-flex gap-2 p-4 mt-auto">
+                            <a href="/Contact/UpdateContact/@item.ContactId" class="modern-btn btn-edit flex-grow-1">
+                                <i class="fas fa-pen"></i> Update Information
+                            </a>
+                            <a href="/Contact/DeleteContact/@item.ContactId"
+                               class="modern-btn btn-delete"
+                               onclick="return confirm('Are you sure you want to delete contact info?');">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sağ: Harita -->
+                <div class="col-lg-5 mb-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-header bg-white border-bottom py-3">
+                            <h5 class="m-0 text-dark" style="font-size:1rem;">
+                                <i class="fas fa-map-marked-alt me-2" style="color:#667eea"></i>Map Location
+                            </h5>
+                        </div>
+                        <div class="map-card-body flex-grow-1">
+                            <div class="map-container">
+                                @if (!string.IsNullOrEmpty(item.MapLocation))
+                                {
+                                    <iframe class="map-iframe"
+                                            src="@item.MapLocation"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                }
+                                else
+                                {
+                                    <div class="d-flex align-items-center justify-content-center bg-light h-100">
+                                        <p class="text-muted mb-0">No map location provided.</p>
+                                    </div>
+                                }
+                            </div>
+                            <div class="map-note">
+                                <small class="text-muted">This location is shown on your main website.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</section>

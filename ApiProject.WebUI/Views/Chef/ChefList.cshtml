@@ -1,50 +1,253 @@
 ﻿@model List<ResultChefDto>
 @{
-	ViewData["Title"] = "ChefList";
-	Layout = "~/Views/AdminLayout/Index.cshtml";
-	int count = 0;
+    ViewData["Title"] = "ChefList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<section class="section">
-	<div class="section-body">
-		<div class="row">
-			<div class="col-12 col-md-12 col-lg-12">
-				<div class="card">
-					<div class="card-header">
-						<h4>Chef's List</h4>
-					</div>
-					<div class="card-body">
-						<table class="table">
-							<thead>
-								<tr>
-									<th scope="col">#</th>
-									<th scope="col">Name</th>
-									<th scope="col">Title</th>
-									<th scope="col">Description</th>
-									<th scope="col">Delete</th>
-									<th scope="col">Update</th>
-								</tr>
-							</thead>
-							<tbody>
-								@foreach (var item in Model)
-								{
-									count++;
-									<tr>
-										<th scope="row">@count</th>
-										<td>@item.NameSurname</td>
-										<td>@item.Title</td>
-										<td>@item.Description</td>
-										<td><a href="/Chef/DeleteChef/@item.ChefId/" class="btn btn-outline-danger">Delete</a> </td>
-										<td><a href="/Chef/UpdateChef/@item.ChefId/" class="btn btn-outline-success">Update</a> </td>
-									</tr>
-								}
-							</tbody>
-						</table>
-						<a href="/Chef/CreateChef/" class="btn btn-outline-info">Add New Chefs</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<style>
+    .chef-card {
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        border: none;
+        background: #fff;
+        height: 100%;
+        overflow: hidden;
+    }
 
+        .chef-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+        }
+
+    /* Sabit aspect-ratio ile resim kutusu — sığdırma sorunu çözüldü */
+    .chef-img-wrapper {
+        position: relative;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+    }
+
+    .chef-img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        transition: transform 0.5s ease;
+    }
+
+    .chef-card:hover .chef-img {
+        transform: scale(1.1);
+    }
+
+    .chef-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.7));
+        padding: 16px;
+        z-index: 1;
+    }
+
+    /* Sosyal ikon butonları — aralık ve görünürlük düzeltildi */
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+
+        .social-links a {
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+            flex-shrink: 0;
+        }
+
+            .social-links a:hover {
+                background: rgba(255,255,255,0.4);
+                transform: scale(1.15);
+            }
+
+    .chef-body {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .chef-name {
+        font-weight: 700;
+        color: #333;
+        font-size: 1.2rem;
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+
+    .chef-title {
+        color: #667eea;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .chef-desc {
+        color: #777;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        height: 4.5em;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        margin-bottom: 1.5rem;
+    }
+
+    .modern-btn {
+        padding: 0.6rem;
+        border-radius: 10px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        text-decoration: none;
+    }
+
+    .btn-edit {
+        background: #e8ecff;
+        color: #667eea;
+    }
+
+    .btn-delete {
+        background: #fff1f2;
+        color: #f5576c;
+    }
+
+    .modern-btn:hover {
+        transform: translateY(-2px);
+        filter: brightness(0.95);
+        text-decoration: none;
+    }
+
+    .btn-create {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 12px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    /* Başlık satırı — iç içe girme düzeltildi */
+    .chef-list-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+        .chef-list-header .header-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .chef-list-header .section-title {
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .chef-list-header .section-lead {
+            margin: 0;
+            color: #6c757d;
+            font-size: 0.95rem;
+        }
+</style>
+
+<section class="section">
+    <div class="section-body">
+
+        <!-- Başlık + Buton -->
+        <div class="chef-list-header">
+            <div class="header-text">
+                <h2 class="section-title">Our Professional Chefs</h2>
+                <br />
+                <p class="section-lead">Manage your kitchen team and their professional profiles.</p>
+            </div>
+            <a href="/Chef/CreateChef/" class="modern-btn btn-create shadow-sm d-inline-flex">
+                <i class="fas fa-plus"></i> Add New Chef
+            </a>
+        </div>
+
+        <!-- Kartlar -->
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card chef-card shadow-sm">
+
+                        <div class="chef-img-wrapper">
+                            <img src="@item.ImageUrl"
+                                 class="chef-img"
+                                 alt="@item.NameSurname"
+                                 onerror="this.src='https://ui-avatars.com/api/?name=@Uri.EscapeDataString(item.NameSurname)&background=667eea&color=fff&size=512'" />
+
+                            <div class="chef-overlay">
+                                <div class="social-links">
+                                    <a href="#" onclick="return false;" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" onclick="return false;" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" onclick="return false;" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chef-body">
+                            <span class="chef-name">@item.NameSurname</span>
+                            <span class="chef-title">@item.Title</span>
+                            <p class="chef-desc">@item.Description</p>
+
+                            <div class="d-flex gap-2">
+                                <a href="/Chef/UpdateChef/@item.ChefId" class="modern-btn btn-edit">
+                                    <i class="fas fa-edit"></i> Edit
+                                </a>
+                                <a href="/Chef/DeleteChef/@item.ChefId"
+                                   class="modern-btn btn-delete"
+                                   onclick="return confirm('Remove @item.NameSurname from the team?');">
+                                    <i class="fas fa-trash"></i> Delete
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Boş durum -->
+        @if (!Model.Any())
+        {
+            <div class="card shadow-none border-0 bg-light text-center py-5">
+                <div class="card-body">
+                    <i class="fas fa-user-slash fa-4x text-muted mb-3"></i>
+                    <h4 class="text-muted">No chefs registered yet.</h4>
+                </div>
+            </div>
+        }
+
+    </div>
+</section>
