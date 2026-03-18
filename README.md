@@ -73,7 +73,11 @@ The core innovation of ApiYummy lies in its AI-driven features:
 #### Dashboard
 <img width="1901" height="919" alt="image" src="https://github.com/user-attachments/assets/fb6e180d-d355-4722-8c05-7ad9580fb76c" />
 <img width="1906" height="921" alt="image" src="https://github.com/user-attachments/assets/b0e89acb-2072-44c1-bec3-51b8c6bdec8c" />
+##### AI Generated Recipes
 <img width="1660" height="817" alt="aidailymenus" src="https://github.com/user-attachments/assets/a26eceb9-6501-4511-b3bf-bc4d877872c8" />
+
+#### Chatbot
+<img width="1905" height="916" alt="chatbot" src="https://github.com/user-attachments/assets/eb33405d-7469-408b-9a0e-7705bdadc7ef" />
 
 #### Categories
 <img width="1901" height="916" alt="image" src="https://github.com/user-attachments/assets/c288aa13-8fd5-4317-8db8-e2213794980c" />
