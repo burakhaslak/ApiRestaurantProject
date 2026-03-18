@@ -366,5 +366,5 @@ FodyWeavers.xsd
 appsettings.json
 
 .vs/
-bin/
-obj/
+**/bin/
+**/obj/
